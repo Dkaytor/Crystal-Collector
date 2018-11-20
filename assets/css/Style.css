@@ -1,8 +1,11 @@
-h1 {
-    font-size: 36px;
-    line-height: 48px;
+.jumbotron {
+    background-color: aqua;
+    color: white;
 }
 
-p {
-    line-height: 40px;
-}
+body {
+     background-image: url("../images/background.jpg");
+    margin: 0px;
+    padding: 0px;
+    }
+
