@@ -1,6 +1,8 @@
 .jumbotron {
     background-color: aqua;
     color: white;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
 }
 
 body {
@@ -8,4 +10,28 @@ body {
     margin: 0px;
     padding: 0px;
     }
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .03);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.target-number {
+	font-size: 25px;
+	background-color: lightgreen;
+	border-style: solid;
+	border-color: rgba(0,0,0,.125);
+	border-width: 2px;
+}
 

@@ -4,25 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Crystal Collector</title>
+    <!-- Link to jQuery library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!--Link to reset CSS styles-->
     <link rel="stylesheet" type="text/css" href="assets/css/resetCSS.css">
+    
+    <!--Link to Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <!--Link to Style sheet-->
     <link rel="stylesheet" type="text/css" href="assets/css/Style.css">
+    
+    <!--Link to javascript file-->
     <script type="text/javascript" src="assets/Javascript/game.js"></script>
-    <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
-     <!-- Start of game-->
-     <div class="container">
 
-        <!-- Jumbotron with Title -->
-        <div class="jumbotron">
-                <h1 class="text-center">
-                    <strong>Crystal Collector Game</strong>
-                </h1>
-                <hr>
+    <!-- Jumbotron with Title -->
+    <div class="jumbotron">
+        <h1 class="text-center">
+            <strong>Crystal Collector Game</strong>
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <!--Instructions panel-->
+            <div class="col-lg-4">
+                <div class="card">
+                    <h3 class="card-header">Game Instructions</h3>
+                    <div class="card-body">
+                            <p class="card-text">
+                                The computer will pick a random number at the beginning of the game.
+                            </p>
+                            <p>There are four crystals, each assigned a different number.
+                            </p>
+                            <p>You can determine the value of the crystals by clicking on them.
+                            </p>
+                            <p>The goal is to click on the right crystals in order to match the computer's random number.
+                            </p>
+                    </div>
                 </div>
-    
+            </div>
+            
+            <!--Break between instructions panel and computer generated number-->
+            <div class="col-lg-2">
+            </div>
+            
+            <!--Results panel-->
+            <div class="col-md-4 target-number">
             </div>
 
+          </div>
+        </div>
+
+
 </body>
+
+</html>
