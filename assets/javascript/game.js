@@ -41,74 +41,141 @@ $(document).ready(function () {
     randomCrystal2();
     randomCrystal3();
     randomCrystal4();
+    $(".computer-guess").text(computerNumber);
+    $(".numberWins").text("Wins: " + wins);
+    $(".numberLosses").text("Losses: " + losses);
 
-   // if ((computerNumber === counter)) {
-     //   wins++;
-       // alert("You win!");
-        //$(".computerGuess, .results").empty();
-        //counter = 0;
-        //randomComputerGuess();
-        //randomCrystal1();
-        //randomCrystal2();
-        //randomCrystal3();
-        //randomCrystal4();
-        //console.log(computerNumber);
-        //console.log(counter);
-        //}
 
-    //else if ((counter > computerNumber)) {
-      //  losses++;
-        //alert("Sorry, you lost");
-        //$(".computerGuess, .results").empty();
-        //counter = 0;
-        //randomComputerGuess();
-        //randomCrystal1();
-        //randomCrystal2();
-        //randomCrystal3();
-        //randomCrystal4();
-    //}
 
-        //else {
-
-            //Capture click event for crystal 1
-            $("#image1").on('click', function() {
-                counter = counter + crystal1;
-                $(".results").text("Your score is " + counter);
-
-            })
-
-            //Capture click event for crystal 2
-            $("#image2").on('click', function () {
-                counter = counter + crystal2;
-                $(".results").text("Your score is " + counter);
-                //sets win/lose conditions
-
-            })
-
-        //Capture click event for crystal 3
-        $("#image3").on('click', function () {
-            counter = counter + crystal3;
+    //Capture click event for crystal 1
+    $("#image1").on('click', function () {
+        counter = counter + crystal1;
+        $(".results").text("Your score is " + counter);
+        if ((computerNumber === counter)) {
+            wins++;
+            $(".numberWins").text("Wins: " + wins);
+            counter = 0;
             $(".results").text("Your score is " + counter);
-
-        })
-
-
-        //Capture click event for crystal 4
-        $("#image4").on('click', function () {
-            counter = counter + crystal4;
+            randomComputerGuess();
+            randomCrystal1();
+            randomCrystal2();
+            randomCrystal3();
+            randomCrystal4();
+            $(".computer-guess").text(computerNumber);
+        }
+        else if ((computerNumber < counter)) {
+            losses++;
+            $(".numberLosses").text("Losses: " + losses);
+            counter = 0;
             $(".results").text("Your score is " + counter);
+            randomComputerGuess();
+            randomCrystal1();
+            randomCrystal2();
+            randomCrystal3();
+            randomCrystal4();
+            $(".computer-guess").text(computerNumber);
+        }
 
-        })
-    
-if ((computerNumber === counter)) {
-    wins++;
-    console.log(wins);
-    }
+    })
 
-$(".computer-guess").text(computerNumber);
-$(".numberWins").text("Wins: " + wins);
-$(".numberLosses").text("Losses: " + losses);
+    //Capture click event for crystal 2
+    $("#image2").on('click', function () {
+        counter = counter + crystal2;
+        $(".results").text("Your score is " + counter);
+        if ((computerNumber === counter)) {
+            wins++;
+            $(".numberWins").text("Wins: " + wins);
+            counter = 0;
+            $(".results").text("Your score is " + counter);
+            randomComputerGuess();
+            randomCrystal1();
+            randomCrystal2();
+            randomCrystal3();
+            randomCrystal4();
+            $(".computer-guess").text(computerNumber);
+        }
+        else if ((computerNumber < counter)) {
+            losses++;
+            $(".numberLosses").text("Losses: " + losses);
+            counter = 0;
+            $(".results").text("Your score is " + counter);
+            randomComputerGuess();
+            randomCrystal1();
+            randomCrystal2();
+            randomCrystal3();
+            randomCrystal4();
+            $(".computer-guess").text(computerNumber);
 
+        }
+
+    })
+
+
+    //Capture click event for crystal 3
+    $("#image3").on('click', function () {
+        counter = counter + crystal3;
+        $(".results").text("Your score is " + counter);
+        if ((computerNumber === counter)) {
+            wins++;
+            $(".numberWins").text("Wins: " + wins);
+            counter = 0;
+            $(".results").text("Your score is " + counter);
+            randomComputerGuess();
+            randomCrystal1();
+            randomCrystal2();
+            randomCrystal3();
+            randomCrystal4();
+            $(".computer-guess").text(computerNumber);
+        }
+        else if ((computerNumber < counter)) {
+            losses++;
+            $(".numberLosses").text("Losses: " + losses);
+            counter = 0;
+            $(".results").text("Your score is " + counter);
+            randomComputerGuess();
+            randomCrystal1();
+            randomCrystal2();
+            randomCrystal3();
+            randomCrystal4();
+            $(".computer-guess").text(computerNumber);
+
+        }
+
+
+    })
+
+
+    //Capture click event for crystal 4
+    $("#image4").on('click', function () {
+        counter = counter + crystal4;
+        $(".results").text("Your score is " + counter);
+        if ((computerNumber === counter)) {
+            wins++;
+            $(".numberWins").text("Wins: " + wins);
+            counter = 0;
+            $(".results").text("Your score is " + counter);
+            randomComputerGuess();
+            randomCrystal1();
+            randomCrystal2();
+            randomCrystal3();
+            randomCrystal4();
+            $(".computer-guess").text(computerNumber);
+        }
+        else if ((computerNumber < counter)) {
+            losses++;
+            $(".numberLosses").text("Losses: " + losses);
+            counter = 0;
+            $(".results").text("Your score is " + counter);
+            randomComputerGuess();
+            randomCrystal1();
+            randomCrystal2();
+            randomCrystal3();
+            randomCrystal4();
+            $(".computer-guess").text(computerNumber);
+
+        }
+
+    })
 
 
 })
