@@ -1,7 +1,7 @@
 # unit-4-game
 Crystal Collector
 
-This is Homework assignment 4 working with jQuery.
+This is a web application using jQuery.
 
 The object of this game is to use 4 different numbers not yet known to you to add up to the computers random number.
 
@@ -17,3 +17,4 @@ If you go over the losses go up by 1.
 In either scenario, the game resets to a new random computer number and
 4 new random crystal numbers.
 
+Deployed: https://dkaytor.github.io/Crystal-Collector/
